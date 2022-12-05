@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "fe7606aa-7f38-49f3-b2c5-d50687076257",
+		"name": "Transactions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7409493"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"Crédito\",\r\n    \"value\": 20000.00,\r\n    \"payd\": true,\r\n    \"dateTransaction\": \"11-30-2022 05:43:32\" ,\r\n    \"category\": \"Salário\",\r\n    \"description\": \"teste de create\",\r\n    \"user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/transaction/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"Crédito\",\r\n    \"value\": 200000.00,\r\n    \"payd\": false,\r\n    \"dateTransaction\": \"11-30-2022 05:43:32\",\r\n    \"category\": \"update\",\r\n    \"description\": \"Salário da empresa update\",\r\n    \"user_id\": 200000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/transaction/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/transaction/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"transaction",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
