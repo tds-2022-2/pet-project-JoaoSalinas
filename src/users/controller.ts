@@ -16,7 +16,7 @@ export const userCreate = async (req: Request, res: Response) => {
 
 
 export const userRead = async (req: Request, res: Response) => {
-  usersRepository.read((users) => res.json(users))
+  usersRepository.read((users) => res.status(200).json(users))
 };
 
 
@@ -24,7 +24,7 @@ export const userReadOne = async (req: Request, res: Response) => {
   const id: number = +req.params.id;
   usersRepository.readOne(id, (user) => {
     if (user) {
-      res.json(user);
+      res.status(204).json(user);
     } else {
       res.status(404).send();
     }

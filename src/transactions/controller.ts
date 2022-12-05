@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response, Router } from "express";
 
 import transactionsRepository from "./repository";
 import Transaction from "./model";

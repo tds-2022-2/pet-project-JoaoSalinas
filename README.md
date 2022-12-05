@@ -5,7 +5,7 @@
 
 A resulução desta parte se encontra na pasta "fetch". Optei por consumir a API do wordpress que disponibiliza os dados abertos do sistema.
 
-As requisições foram feitas utilizando a ferramenta Postman e as requisições de Users e Posts foram exportadas, juntamente com o arquivo de variaveis de ambiente e está disponibilizado na pasta <a href="https://github.com/tds-2022-2/pet-project-JoaoSalinas/tree/main/utils/thirdPartAPI">"thirdPartAPI"</a>;
+As requisições foram feitas utilizando a ferramenta Postman e as requisições de Users e Posts foram exportadas, juntamente com o arquivo de variaveis de ambiente e está disponibilizado na pasta <a target="_blank" href="https://github.com/tds-2022-2/pet-project-JoaoSalinas/tree/main/src/utils/thirdPartAPI">"thirdPartAPI"</a>;
 
 ## Parte 2 - Produzir uma API:
 Com qualquer tema, que contemple os verbos HTTP GET, POST, PUT, DELETE e PATCH e entregue os corretos códigos de resposta, pode ser feito com o Spring ou outra linguagem/framework.
@@ -18,6 +18,8 @@ yarn
 yarn dev
 ```
 
-Os exemplos de requisição foram exportados como arquivos json que podem ser importados no postman para testes. Os mesmos se encontam em <a href="https://github.com/tds-2022-2/pet-project-JoaoSalinas/tree/main/utils/postman_collections">"postman_collections"</a>
+Os exemplos de requisição foram exportados como arquivos json que podem ser importados no postman para testes. Os mesmos se encontam em <a target="_blank" href="https://github.com/tds-2022-2/pet-project-JoaoSalinas/tree/main/src/utils/postman_collections">"postman_collections"</a>
 ## Parte 3 - Documentação:
  criar um Swagger que pode ser da API implementada ou outra. Importante: os arquivos destas tarefas devem estar no repo do pet.
+
+ A documentação foi feita utilizando a lib swagger-ui-express e pode ser acessado através do link local da <a target="_blank" href="http://localhost:3333/api-docs/">Documentação</a>.
